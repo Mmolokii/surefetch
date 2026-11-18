@@ -1,0 +1,46 @@
+{
+  "name": "surefetch",
+  "version": "0.0.0",
+  "description": "A typed HTTP client for TypeScript: typed responses, typed errors, timeouts and retries that won't charge anyone twice.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "zod": "^4"
+  },
+  "keywords": [
+    "fetch",
+    "http",
+    "client",
+    "typescript",
+    "zod",
+    "retry",
+    "idempotency"
+  ],
+  "author": "Mmoloki Kgololosego",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mmolokii/surefetch.git"
+  },
+  "packageManager": "pnpm@12.21.0+sha512.66fd8278ee28935ce951792d34367ff3af5c432a2756445823029533835b8da529bbe0be5130afd56ed0713fb8789e47bad82d93bd5ae2fe54b15562d6276ef0",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "zod": "^4"
+  }
+}
